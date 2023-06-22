@@ -20,13 +20,15 @@
     height: 100vh;
     margin-inline-start: 1%;
     margin-inline-end: 0%;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-items: center;
     /* flex-wrap: wrap; */
     flex-direction: column;
+    overflow: hidden;
   }
   
+
   .holder {
     width: 95%;
     margin-top: 1vmax;
@@ -45,17 +47,16 @@
   
   .holders {
     width: 95%;
-    margin-top: 1vmax;
-    height: 500px;
+    margin-top: 18vmax;
+    height: 97vmax;
     align-items: center;
-    /* align-content: center; */
     border: 2px solid pink;
-    /* padding-top: 75px; */
-     display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column; 
-    /* justify-content: center; */
+    padding-top: 75px;
     overflow-y: scroll !important;
+  }
+
+  .holders::-webkit-scrollbar {
+    width: 0;
   }
 
   #Udt1 {
@@ -142,10 +143,14 @@
   }
 
   .cards {
-    width: 25%;
-    height: 75em;
+    width: 40%;
+    min-height: 21em;
     margin-bottom: 10px;
     background-color: lightblue;
+    opacity: 0.9;
+    margin-top: 31%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   @media screen and (min-width: 716px) and (max-width :850px){
