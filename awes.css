@@ -5,7 +5,7 @@
   body {
     background: #000000;
     margin: 0;
-    /* overflow: hidden !important; */
+    /* overflow: hidden; */
   }
   
   h1 {
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
   }
   
@@ -36,12 +36,28 @@
     border: 2px solid pink;
     /* padding-top: 75px; */
      display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column; 
     justify-content: center;
     overflow-y: scroll !important;
   }
   
+  
+  .holders {
+    width: 95%;
+    margin-top: 1vmax;
+    height: 500px;
+    align-items: center;
+    /* align-content: center; */
+    border: 2px solid pink;
+    /* padding-top: 75px; */
+     display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column; 
+    /* justify-content: center; */
+    overflow-y: scroll !important;
+  }
+
   #Udt1 {
     width: 80%;
     height: 2em !important;
@@ -126,10 +142,12 @@
   }
 
   .cards {
-    background-color: aliceblue;
-    width: 25em;
-    height: 120%;
+    width: 25%;
+    height: 75em;
+    margin-bottom: 10px;
+    background-color: lightblue;
   }
+
   @media screen and (min-width: 716px) and (max-width :850px){
     h1 {
       font-size: 3em;
