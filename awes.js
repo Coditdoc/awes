@@ -52,6 +52,8 @@ window.onload = function() {
 }
 */
 
+/*
+
 window.onload = function() {
   // Get a reference to the .holders div element
   const holdersDiv = document.querySelector('.holders');
@@ -89,3 +91,31 @@ window.onload = function() {
     scrollInterval = setInterval(updateScrollPosition, intervalDuration);
   }, scrollDelay);
 }
+*/
+
+  // Get references to the text box, button, and link elements
+  const myTextBox = document.querySelector('#Udt1');
+  const myButton = document.querySelector('#myButton');
+  const myLink = document.querySelector('#myLink');
+
+  // Add an event listener to the button element that listens for the click event
+  myButton.addEventListener('click', function() {
+    console.log(myTextBox.value)
+    // Get the value of the text box
+    let text = myTextBox.value;
+
+    // Convert the text to uppercase
+    text = text.toUpperCase();
+
+    // Convert the text to lowercase
+    text = text.toLowerCase();
+
+    // Check if the text matches the expected string
+    if (text === 'hey i am here' || text === 'heyiamhere') {
+      // The text matches, so show the link element
+      myLink.style.display = 'inline';
+    } else {
+      // The text does not match, so hide the link element
+      myLink.style.display = 'none';
+    }
+  });

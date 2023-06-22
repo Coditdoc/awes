@@ -40,7 +40,7 @@
     justify-items: center;
     /* flex-wrap: wrap; */
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden !important;
   }
 
   .holder {
@@ -55,7 +55,6 @@
     /* flex-wrap: wrap; */
     flex-direction: column; 
     justify-content: center;
-    overflow-y: scroll !important;
   }
   
   
