@@ -16,7 +16,7 @@
   
   .main{
     max-width: 95vmax;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 100vh;
     margin-inline-start: 1%;
     margin-inline-end: 0%;
@@ -63,7 +63,7 @@
     margin-top: 18vmax;
     height: 97vmax;
     align-items: center;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     padding-top: 75px;
     overflow-y: scroll !important;
   }
@@ -196,7 +196,7 @@
   }
 
   .cards {
-    width: 40%;
+    width: 45%;
     min-height: 21em;
     margin-bottom: 10px;
     background-color: lightblue;
