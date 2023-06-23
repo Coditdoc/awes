@@ -112,15 +112,20 @@ window.onload = function() {
 
     // Check if the text matches the expected string
     if (text == "") {
+
       document.getElementById("udans").style.visibility="visible";
 
       document.getElementById("udans").innerHTML = "haha nice try :)";
+
+      document.getElementById("udans2").style.visibility="hidden";
       console.log("enter text")
     }
 
     else if (text === 'hey i am here' || text === 'heyiamhere') {
       document.getElementById("udans").style.visibility="hidden";
       // The text matches, so show the link element
+      document.getElementById("udans2").style.visibility="visible";
+
       document.getElementById("udans2").innerHTML = "click me :)";
       // myLink.style.display = 'inline';
     } else {

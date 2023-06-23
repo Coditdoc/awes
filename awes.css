@@ -122,7 +122,7 @@
   padding: 4px;
   font-size: 2em;
   filter: drop-shadow(0 0 10px white);
-  margin-block-start: ;
+  margin-block-start: 0;
   /* background-color: #35c5de; */
 }
   image {
@@ -226,7 +226,13 @@
       overflow: hidden !important;
       visibility: hidden;
     }
+
+    #udans2 {
+      margin-top: -16vh;
+      font-size: 4em;
+    }
   }
+
   @media screen and (min-width: 1100px) {
     .holder {
       margin-block-start: 2em;
