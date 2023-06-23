@@ -119,17 +119,33 @@ window.onload = function() {
 
       document.getElementById("udans2").style.visibility="hidden";
       console.log("enter text")
+
+      // Add a class that defines an animation
+      Udt1.classList.add('error');
+      // remove the class after the animation completes
+      setTimeout(function() {
+        Udt1.classList.remove('error');
+      }, 300);
     }
 
     else if (text === 'hey i am here' || text === 'heyiamhere') {
       document.getElementById("udans").style.visibility="hidden";
       // The text matches, so show the link element
-      document.getElementById("udans2").style.visibility="visible";
+      document.getElementById("udans2").style.display="block";
 
       document.getElementById("udans2").innerHTML = "click me :)";
       // myLink.style.display = 'inline';
     } else {
       // The text does not match, so hide the link element
-      myLink.style.display = 'none';
+      udans2.style.display = 'none';
+      document.getElementById("udans").innerHTML = "common"
+      
+      // Add a class that defines an animation
+      Udt1.classList.add('error');
+      // remove the class after the animation completes
+      setTimeout(function() {
+        Udt1.classList.remove('error');
+      }, 300);
     }
   });
+

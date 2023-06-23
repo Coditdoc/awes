@@ -94,6 +94,25 @@
   a {
     text-decoration: none;
   }
+
+  /* Define a keyframe animation that moves the element left and right */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+/* Define a class that applies the animation */
+.error {
+  animation: shake 0.3s;
+  box-shadow: 0 0 10px red;
+  border: 3px solid red !important;
+}
+
+
+
+
   .anshold {
     width: 100%;
     /* position: relative; */
@@ -120,6 +139,7 @@
   text-align: center;
   /* margin-top: -43vh; */
   padding: 4px;
+  display: none;
   font-size: 2em;
   filter: drop-shadow(0 0 10px white);
   margin-block-start: 0;
@@ -127,7 +147,7 @@
 }
   image {
     width: 128px;
-    height: 140px;
+    height: 63px;
   }
   
   .btnholde {
@@ -135,7 +155,7 @@
     height: 2em !important;
     position: relative;
     left: -2em;
-    top: -3vh;
+    top: 5vh;
   }
   
   #arrow {
@@ -202,9 +222,6 @@
 
     }
 
-    .btnholde {
-      top: 0vh;
-    }
 
     #arrow{
       position: absolute;
@@ -353,4 +370,9 @@
     }
   }
   
-                                                      
+  @media screen and (min-width: 280px) and (max-width :660px){
+    image {
+      width: 97px;
+      height: 67px;
+  }
+  }
