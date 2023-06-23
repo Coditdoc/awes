@@ -302,14 +302,13 @@
       width: 16em;
       margin-inline-end: auto;
       margin-inline-start: auto;
-      border-left: 2px solid white;
       font: 1em sans-serif;
-      top: -28em !important;
-      display: block;
-      padding: 49px;
-      height: 25em;
-      right: -25em;
       text-align: center;
+      margin-block-start: -12em;
+    }
+
+    #udans2 {
+      margin-block-start: -2vmax;
     }
   
     .bgimg {
