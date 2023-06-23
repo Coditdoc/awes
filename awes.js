@@ -117,7 +117,7 @@ window.onload = function() {
 
       document.getElementById("udans").innerHTML = "haha nice try :)";
 
-      document.getElementById("udans2").style.visibility="hidden";
+      document.getElementById("udans2").style.display="none";
       console.log("enter text")
 
       // Add a class that defines an animation
