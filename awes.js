@@ -104,9 +104,6 @@ window.onload = function() {
     // Get the value of the text box
     let text = myTextBox.value;
 
-    // Convert the text to uppercase
-    text = text.toUpperCase();
-
     // Convert the text to lowercase
     text = text.toLowerCase();
 

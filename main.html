@@ -13,11 +13,16 @@
 
         <div class="holders">
             <div class="cards"> <img src="https://i.postimg.cc/1t0XXPJd/wp1972841-miraculous-tales-of-ladybug-cat-noir-wallpapers.png">  </div>
+            
             <div class="cards"> <img src="https://i.postimg.cc/4xTSFJ4r/wp11839882-cats-2023-wallpapers.jpg "> </div>
-            <div class="cards"> <img src="https://i.postimg.cc/pLYzkC4f/wp1972869-miraculous-tales-of-ladybug-cat-noir-wallpapers.png"> </div>
-            <div class="cards"> <img src="https://i.postimg.cc/Yq765jgf/download.jpg"> </div>
-            <div class="cards"> <img src="https://i.postimg.cc/BQfpJmWF/download-1.jpg"> </div>
-            <div class="cards"> <img src="https://i.postimg.cc/d3y54fbs/download-2.jpg"> </div>
+
+            <div class="cards"> <img src="https://i.postimg.cc/pLYzkC4f/wp1972869-miraculous-tales-of-ladybug-cat-noir-wallpapers.png" loading="lazy"> </div>
+
+            <div class="cards"> <img src="https://i.postimg.cc/Yq765jgf/download.jpg" loading="lazy"> </div>
+
+            <div class="cards"> <img src="https://i.postimg.cc/BQfpJmWF/download-1.jpg"  loading="lazy"> </div>
+
+            <div class="cards"> <img src="https://i.postimg.cc/d3y54fbs/download-2.jpg"loading="lazy"> </div>
 
 <!-- https://i.postimg.cc/QMJm9hjr/wp1972844-miraculous-tales-of-ladybug-cat-noir-wallpapers.png   -->
 
@@ -37,6 +42,7 @@
    
     <!-- https://i.postimg.cc/7Yc4bGtL/wp1972847-miraculous-tales-of-ladybug-cat-noir-wallpapers.png -->
 </body>
+<!--
 <script>
     
 window.onload = function() {
@@ -76,5 +82,45 @@ window.onload = function() {
     scrollInterval = setInterval(updateScrollPosition, intervalDuration);
   }, scrollDelay);
 }
+</script> -->
+<script>
+// Add an event listener to the DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+  // Get a reference to the .holders div element
+  const holdersDiv = document.querySelector('.holders');
+
+  // Set the maximum scroll position (in pixels)
+  const maxScrollTop = 200;
+
+  // Set the scroll speed (in pixels per interval)
+  const scrollSpeed = 5;
+
+  // Set the interval duration (in milliseconds)
+  const intervalDuration = 10;
+
+  // Set the scroll delay (in milliseconds)
+  const scrollDelay = 2000;
+
+  // Create a function to update the scroll position of the .holders div
+  function updateScrollPosition() {
+    // Check if the .holders div has reached the maximum scroll position
+    if (holdersDiv.scrollTop >= maxScrollTop) {
+      // Stop the scrolling animation
+      clearInterval(scrollInterval);
+      // Smoothly scroll the .holders div back to its original position
+      holdersDiv.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    // Update the scrollTop property of the .holders div
+    holdersDiv.scrollTop += scrollSpeed;
+  }
+
+  // Call the updateScrollPosition function at regular intervals after a delay
+  let scrollInterval;
+  setTimeout(function() {
+    scrollInterval = setInterval(updateScrollPosition, intervalDuration);
+  }, scrollDelay);
+});
 </script>
 </html>
