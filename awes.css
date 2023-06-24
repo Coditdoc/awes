@@ -197,13 +197,20 @@
 
   .cards {
     width: 45%;
-    min-height: 21em;
+    min-height: 28em;
     margin-bottom: 10px;
     background-color: lightblue;
     opacity: 0.9;
     margin-top: 31%;
     margin-inline-start: auto;
     margin-inline-end: auto;
+  }
+
+  .cards img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
   }
 
   @media screen and (min-width: 716px) and (max-width :850px){
