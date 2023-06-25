@@ -199,11 +199,56 @@
     width: 45%;
     min-height: 28em;
     margin-bottom: 10px;
-    background-color: lightblue;
+    background-color: #bc2365;
     opacity: 0.9;
     margin-top: 31%;
     margin-inline-start: auto;
     margin-inline-end: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    perspective: 1000px; 
+  }
+
+   /* This container is needed to position the front and back side */
+   .cards-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s; /* Add transition for the flip effect */
+    transform-style: preserve-3d; /* Enable the flip effect */
+  }
+
+  /* Do an horizontal flip when you click on the card */
+  .cards.flip .cards-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .cards-front, .cards-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden; /* Hide the back side when facing away from the user */
+  }
+
+  /* Style the front side */
+  .cards-front img {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+    height:auto;
+    display: block; 
+    margin: 0 auto; 
+  }
+
+  /* Style the back side */
+  .cards-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg); /* Rotate the back side by default */
+    font-size: 2vw; 
   }
 
   .cards img {
@@ -374,6 +419,9 @@
       white-space: nowrap;
       margin-top: -1em;
       visibility: hidden;
+    }
+    .cards {
+      min-height: 69em;
     }
   }
   
