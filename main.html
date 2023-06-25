@@ -11,7 +11,7 @@
 <body>  
     <div class="main">
         <div class="holders">
-          <div class="cards" onclick="this.classList.toggle('flip')"> <!-- Add onclick event to toggle the flip class -->
+          <div class="cards"   id="first-card" onclick="this.classList.toggle('flip')"> <!-- Add onclick event to toggle the flip class -->
             <div class="cards-inner"> <!-- Add an inner div for the flip effect -->
               <div class="cards-front"> <!-- Add a front div for the image -->
                 <img src="https://i.postimg.cc/1t0XXPJd/wp1972841-miraculous-tales-of-ladybug-cat-noir-wallpapers.png"> 
@@ -142,7 +142,9 @@ window.onload = function() {
   }, scrollDelay);
 }
 </script> -->
+<!--
 <script>
+ 
 // Add an event listener to the DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', function() {
   // Get a reference to the .holders div element
@@ -181,5 +183,58 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollInterval = setInterval(updateScrollPosition, intervalDuration);
   }, scrollDelay);
 });
-</script>
+ --> 
+
+ <script>
+  // Add an event listener to the DOMContentLoaded event
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get a reference to the .holders div element
+    const holdersDiv = document.querySelector('.holders');
+  
+    // Set the maximum scroll position (in pixels)
+    const maxScrollTop = 200;
+  
+    // Set the scroll speed (in pixels per interval)
+    const scrollSpeed = 5;
+  
+    // Set the interval duration (in milliseconds)
+    const intervalDuration = 10;
+  
+    // Set the scroll delay (in milliseconds)
+    const scrollDelay = 2000;
+  
+    // Create a function to update the scroll position of the .holders div
+    function updateScrollPosition() {
+      // Check if the .holders div has reached the maximum scroll position
+      if (holdersDiv.scrollTop >= maxScrollTop) {
+        // Stop the scrolling animation
+        clearInterval(scrollInterval);
+        // Smoothly scroll the .holders div back to its original position
+        holdersDiv.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+  
+      // Update the scrollTop property of the .holders div
+      holdersDiv.scrollTop += scrollSpeed;
+    }
+  
+    // Call the updateScrollPosition function at regular intervals after a delay
+    let scrollInterval;
+    setTimeout(function() {
+      scrollInterval = setInterval(updateScrollPosition, intervalDuration);
+      // Get a reference to the first card element
+      const firstCard = document.querySelector('#first-card');
+      // Add a flip class to the first card after a delay
+      setTimeout(function() {
+        firstCard.classList.add('flip');
+        // Remove the flip class from the first card after another delay
+        setTimeout(function() {
+          firstCard.classList.remove('flip');
+        }, 1000); // Adjust this value as needed
+      }, 1000); // Adjust this value as needed
+    }, scrollDelay);
+  });
+  </script>
+  
+
 </html>
