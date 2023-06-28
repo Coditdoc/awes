@@ -125,7 +125,7 @@ window.onload = function() {
       }, 300);
     }
 
-    else if (text === 'hey i am here' || text === 'heyiamhere') {
+    else if (text === 'was i wrong' || text === 'wasiwrong') {
       document.getElementById("udans").style.visibility="hidden";
       // The text matches, so show the link element
       document.getElementById("udans2").style.display="block";
@@ -135,7 +135,7 @@ window.onload = function() {
     } else {
       // The text does not match, so hide the link element
       udans2.style.display = 'none';
-      document.getElementById("udans").innerHTML = "common"
+      document.getElementById("udans").innerHTML = "wrong pass(contact doc)"
       
       // Add a class that defines an animation
       Udt1.classList.add('error');
