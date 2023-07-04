@@ -271,6 +271,7 @@
     margin: 0 auto; 
   }
 
+  
   @media screen and (min-width: 716px) and (max-width :850px){
     h1 {
       font-size: 3em;

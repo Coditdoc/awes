@@ -105,7 +105,7 @@ window.onload = function() {
     let text = myTextBox.value;
 
     // Convert the text to lowercase
-    text = text.toLowerCase();
+    text = text.toUpperCase();
 
     // Check if the text matches the expected string
     if (text == "") {
@@ -125,7 +125,7 @@ window.onload = function() {
       }, 300);
     }
 
-    else if (text === 'was i wrong' || text === 'wasiwrong') {
+    else if (text === 'J MADE I QUEEN' || text === 'J MADE I QUEEN') {
       document.getElementById("udans").style.visibility="hidden";
       // The text matches, so show the link element
       document.getElementById("udans2").style.display="block";
