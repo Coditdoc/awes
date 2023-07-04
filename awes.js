@@ -125,7 +125,7 @@ window.onload = function() {
       }, 300);
     }
 
-    else if (text === 'J MADE I QUEEN' || text === 'JMADEIQUEEN' || text === 'J MADEIQUEEN'))  {
+    else if (text === 'J MADE I QUEEN' || text === 'JMADEIQUEEN' || text === 'J MADEIQUEEN')  {
       document.getElementById("udans").style.visibility="hidden";
       // The text matches, so show the link element
       document.getElementById("udans2").style.display="block";
