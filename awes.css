@@ -37,7 +37,7 @@
   
   .mains{
     max-width: 95vmax;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 100vh;
     margin-inline-start: 1%;
     margin-inline-end: 0%;
@@ -55,7 +55,7 @@
     height: 97vmax;
     align-items: center;
     align-content: center;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     /* padding-top: 75px; */
      display: flex;
     /* flex-wrap: wrap; */
