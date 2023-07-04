@@ -54,12 +54,12 @@
     height: 97vmax;
     align-items: center;
     align-content: center;
-    /* border: 2px solid pink; */
     /* padding-top: 75px; */
      display: flex;
     /* flex-wrap: wrap; */
     flex-direction: column; 
     justify-content: center;
+    /* border: 2px solid pink; */
   }
   
   
