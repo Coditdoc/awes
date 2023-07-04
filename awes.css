@@ -323,7 +323,7 @@
       margin-inline-start: auto;
       min-width: 67em;
       max-height: 63vmax !important;
-      border: 2px solid rgba(255, 51, 153, 1);
+      /* border: 2px solid rgba(255, 51, 153, 1); */
     }
   
     #arrow {
